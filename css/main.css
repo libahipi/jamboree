@@ -14,6 +14,10 @@
     font-family: 'Century Gothic';
     src: url('gothic.ttf');
 }
+@font-face {
+    font-family: 'Futura';
+    src: url('Futura.ttf');
+}
 
 html,
 button,
@@ -28,12 +32,6 @@ body {
     line-height: 1.4;
 }
 
-/*
- * Remove text-shadow in selection highlight: h5bp.com/i
- * These selection rule sets have to be separate.
- * Customize the background color to match your design.
- */
-
 ::-moz-selection {
     background: #b3d4fc;
     text-shadow: none;
@@ -44,172 +42,132 @@ body {
     text-shadow: none;
 }
 
-/*
- * A better looking default horizontal rule
- */
-
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
-}
-
-/*
- * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
- */
-
-img {
-    vertical-align: middle;
-}
-
-/*
- * Remove default fieldset styles.
- */
-
-fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
-}
-
-/*
- * Allow only vertical resizing of textareas.
- */
-
-textarea {
-    resize: vertical;
-}
-
 /* ==========================================================================
-   Chrome Frame prompt
+   Bleh.
    ========================================================================== */
 
-.chromeframe {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
+html {
+    background-color: rgba(8,15,8,0.9);
+    background: url('../img/potential-bg.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
+#wrap {
+    position: absolute;
+    width: 1100px;
+    //border: 1px solid green;
+    margin-left: 50%;
+    left: -550px;
+}
+
+@media (max-width: 1024px) {
+    wrap {
+        width: 900px;
+        left: -450px;
+    }
+}
 
 #header {
-    height: 350px;
-    width: 740px;
-    padding: 80px 0 0 360px;
-    background: url('../img/23wsj.png') 100px 30px no-repeat;
+    //border: 1px solid red;
+    padding: 0 0 40px 100px;
 }
 
 #header h1 {
     font-family: 'Century Gothic', serif;
-    font-size: 3em;
-    color: #231815;
-}
-
-.eestiskaudid {
-    display: block;
+    font-size: 2.5em;
+    color: rgba(32,24,21,0.7);
 }
 .jamboreel {
     display: block;
     text-indent: 100px;
 }
 
-#countdown {
-    float: right;
-    font-size: 1.2em;
-    font-family: 'Century Gothic', serif;
-    padding:  2px 5px;
-    margin-right: 20px;
-    border-bottom: 4px solid #ee9400;
+#nav {
+    margin-bottom: 30px;
+    //border: 1px solid blue;
+}
+#nav li {
+    float: left;
+    display: block;
+    padding: 5px 20px;
+    margin: 0 15px;
+    list-style-type: none;
+    background-color: rgba(238,149,2,0.92);
+    color: white;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+    font-size: 0.9em;
+    font-family: 'Century Gothic', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+#nav li:hover {
+    background-color: rgba(223,26,14, 0.9);
 }
 
+.what-is-jamboree {
+    background-color: rgba(113,20,14, 0.9);
+    padding-right: 20px;
+    border-top-right-radius: 5px;
+    color: white;
+}
+.what-is-jamboree h1, .what-is-jamboree p {
+    font-family: 'Century Gothic';
+}
 
+.what-is-jamboree a[href="#more"] {
+    display: inline-block;
+    float: right;
+    margin: 15px 10px 10px 10px;
+    color: rgba(238,149,2,1);
+}
 
+.about-japan {
+    margin-top: 20px;
+    padding-left: 20px;
+    background-color: rgba(238,149,2,0.9);
+    border-top-left-radius: 5px;
+    color: white;
+    font-family: 'Century Gothic';
+}
 
+.about-japan .japan-2015-logo {
+    float: right;
+    margin-left: 20px;
+    width: 140px;
+    height: 240px;
+    background: url('../img/23wsj.png') top 20px right 20px no-repeat;
+    background-size: auto 200px;
+    background-color: white;
+}
 
+.footer {
+    margin-top: 30px;
+    padding-right: 20px;
+    background-color: rgba(20,20,20,0.9);
+    color: #afafaf;
+    font-size: 0.8em;
+    font-family: 'Century Gothic';
+}
 
-
-
-
-
-
-
+.footer .esy-logo {
+    margin-right: 20px;
+    float: left;
+    width: 120px;
+    height: 120px;
+    background: url('../img/esy.png') top 20px left 20px no-repeat;
+    background-size: 90px 90px;
+}
 
 
 /* ==========================================================================
    Helper classes
    ========================================================================== */
-
-/*
- * Image replacement
- */
-
-.ir {
-    background-color: transparent;
-    border: 0;
-    overflow: hidden;
-    /* IE 6/7 fallback */
-    *text-indent: -9999px;
-}
-
-.ir:before {
-    content: "";
-    display: block;
-    width: 0;
-    height: 150%;
-}
-
-/*
- * Hide from both screenreaders and browsers: h5bp.com/u
- */
-
-.hidden {
-    display: none !important;
-    visibility: hidden;
-}
-
-/*
- * Hide only visually, but have it available for screenreaders: h5bp.com/v
- */
-
-.visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-}
-
-/*
- * Extends the .visuallyhidden class to allow the element to be focusable
- * when navigated to via the keyboard: h5bp.com/p
- */
-
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
-}
-
-/*
- * Hide visually and from screenreaders, but maintain layout
- */
-
-.invisible {
-    visibility: hidden;
-}
 
 /*
  * Clearfix: contain floats
@@ -240,93 +198,4 @@ textarea {
 
 .clearfix {
     *zoom: 1;
-}
-
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
-}
-
-@media print,
-       (-o-min-device-pixel-ratio: 5/4),
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
-}
-
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid required HTTP connection: h5bp.com/r
-   ========================================================================== */
-
-@media print {
-    * {
-        background: transparent !important;
-        color: #000 !important; /* Black prints faster: h5bp.com/s */
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
-
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
-
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
-
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
-
-    /*
-     * Don't show links for images, or javascript/internal links
-     */
-
-    .ir a:after,
-    a[href^="javascript:"]:after,
-    a[href^="#"]:after {
-        content: "";
-    }
-
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
-
-    thead {
-        display: table-header-group; /* h5bp.com/t */
-    }
-
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
-
-    img {
-        max-width: 100% !important;
-    }
-
-    @page {
-        margin: 0.5cm;
-    }
-
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
-
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
 }
