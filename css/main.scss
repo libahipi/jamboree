@@ -1,0 +1,282 @@
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+@font-face {
+    font-family: 'Century Gothic';
+    src: url('gothic.ttf');
+}
+@font-face {
+    font-family: 'Futura';
+    src: url('Futura.ttf');
+}
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/* ==========================================================================
+   Bleh.
+   ========================================================================== */
+
+html {
+    background-color: rgba(8,15,8,0.9);
+    background: url('../img/potential-bg.png') no-repeat top center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#wrap {
+    position: absolute;
+    width: 1100px;
+    margin-left: 50%;
+    left: -550px;
+}
+
+@media (max-width: 1024px) {
+    wrap {
+        width: 900px;
+        left: -450px;
+    }
+}
+
+#header {
+    margin: 30px 0;
+    height: 160px;
+    background-image: url('../img/esy.png');
+    background-size: 150px auto;
+    background-position: top left;
+    background-repeat: no-repeat;
+    padding-left: 200px;
+}
+
+#header h1 {
+    float: left;
+    font-family: 'Century Gothic', serif;
+    font-size: 2.5em;
+    color: rgba(32,24,21,0.7);
+}
+
+.timer {
+    position: absolute;
+    width: 600px;
+    height: 100px;
+    margin-top: -500px;
+    margin-left: 400px;
+    float: right;
+    padding-top: 500px;
+    border-radius: 600px;
+    background-color: rgba(223,46,14,0.7);
+    font-family: 'Century Gothic';
+    font-size: 1.2em;
+    color: white;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-weight: bold;
+}
+.timer .remaining-days {
+    display: block;
+}
+.timer .remaining-mins {
+    display: block;
+}
+
+#nav {
+    margin-bottom: 30px;
+    background-color: rgba(238,149,2,0.92);
+}
+#nav li {
+    float: left;
+    display: block;
+    padding: 5px 15px;
+    margin: 0 15px;
+    list-style-type: none;
+    //background-color: rgba(238,149,2,0.92);
+    color: white;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 20px;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+    font-size: 0.9em;
+    font-family: 'Century Gothic', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+#nav li:hover, #nav li.active {
+    background-color: rgba(223,26,14, 0.9);
+}
+
+#nav li a{
+    color: white;
+    text-decoration: none;
+}
+
+.what-is-jamboree {
+    background-color: rgba(113,20,14, 0.9);
+    padding-right: 20px;
+    border-top-right-radius: 5px;
+    color: white;
+}
+.what-is-jamboree h1, .what-is-jamboree p {
+    font-family: 'Century Gothic';
+}
+
+.what-is-jamboree a[href="#more"] {
+    display: inline-block;
+    float: right;
+    margin: 15px 10px 10px 10px;
+    color: rgba(238,149,2,1);
+}
+
+.about-japan {
+    margin-top: 20px;
+    padding-left: 20px;
+    background-color: rgba(238,149,2,0.9);
+    border-top-left-radius: 5px;
+    color: white;
+    font-family: 'Century Gothic';
+}
+
+.about-japan .japan-2015-logo {
+    float: right;
+    margin-left: 20px;
+    width: 140px;
+    height: 240px;
+    background: url('../img/23wsj.png') top 20px right 20px no-repeat;
+    background-size: auto 200px;
+    background-color: white;
+}
+
+.block {
+  display: table;
+  margin-bottom: 20px;
+  font-family: "Century Gothic";
+  .side {
+    display: table-cell;
+    width: 300px;
+  }
+  .main {
+    display: table-cell;
+    width: 760px;
+    background-color: rgba(113,20,14,0.9);
+    padding: 20px;
+    color: white;
+    font-size: 0.9em;
+  }
+}
+
+.rules-1 {
+  .side {
+    background-image: url('../img/rules-1.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+}
+.rules-2 {
+  .side {
+    background-image: url('../img/rules-2.jpg');
+    background-position: center center;
+    background-size: 363px auto;
+    background-repeat: no-repeat;
+  }
+}
+.rules-3 {
+  .side {
+    background-image: url('../img/rules-3.jpg');
+    background-position: -400px -200px;
+    background-repeat: no-repeat;
+  }
+}
+.rules-4 {
+  .side {
+    background-image: url('../img/rules-4.jpg');
+    background-size: 600px auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+}
+
+
+.footer {
+    margin-top: 30px;
+    padding-right: 20px;
+    background-color: rgba(20,20,20,0.9);
+    color: #afafaf;
+    font-size: 0.8em;
+    font-family: 'Century Gothic';
+}
+
+.footer .esy-logo {
+    margin-right: 20px;
+    float: left;
+    width: 120px;
+    height: 120px;
+    background: url('../img/esy.png') top 20px left 20px no-repeat;
+    background-size: 90px 90px;
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
