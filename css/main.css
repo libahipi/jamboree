@@ -102,7 +102,7 @@ html {
 #nav li {
   float: left;
   display: block;
-  padding: 5px 15px;
+  padding: 5px 0;
   margin: 0 15px;
   list-style-type: none;
   color: white;
@@ -119,22 +119,24 @@ html {
   background-color: rgba(223, 26, 14, 0.9); }
 
 #nav li a {
+  padding: 5px 15px;
   color: white;
   text-decoration: none; }
 
 .what-is-jamboree {
   background-color: rgba(113, 20, 14, 0.9);
   padding-right: 20px;
+  height: 248px;
   border-top-right-radius: 5px;
   color: white; }
 
 .what-is-jamboree h1, .what-is-jamboree p {
   font-family: 'Century Gothic'; }
 
-.what-is-jamboree a[href="#more"] {
+.what-is-jamboree a.flickr-link {
   display: inline-block;
   float: right;
-  margin: 15px 10px 10px 10px;
+  margin: 5px 10px 10px 10px;
   color: #ee9502; }
 
 .about-japan {
