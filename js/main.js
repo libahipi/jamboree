@@ -5,12 +5,12 @@ App = {
         window.onload = function routing() {
             var hash = window.location.hash;
             console.log(hash);
-            if (['#/jamboree', '#/blog', '#/osale', '#/rules', '#/teams', '#/toeta'].indexOf(hash) !== -1) {
+            if (['#/jamboree', '#/blog', '#/osale', '#/rules', '#/seis', '#/toeta'].indexOf(hash) !== -1) {
                 navigate(hash);
             }
         };
 
-        function navigate(to, hash) {
+        function navigate(to) {
             var $nav = $('#nav li'),
                 $pages = $('#wrap .page'),
                 $anchor = $nav.find('a[href="'+to+'"]'),
@@ -19,7 +19,12 @@ App = {
             $pages.filter(to.replace(/\//, '')).show();
             $li.addClass('active');
             window.location.hash = to;
-            window.scrollTo(0,0);
+
+            if (to === '#/seis') {
+                $.getJSON('http://localhost/teams', function(response) {
+                    console.log(response);
+                })
+            }
         };
 
         $('#nav li').on('click', 'a', function(e) {
