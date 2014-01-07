@@ -30,6 +30,7 @@ textarea {
 body {
     font-size: 1em;
     line-height: 1.4;
+    overflow-y: scroll;
 }
 
 ::-moz-selection {
@@ -73,7 +74,7 @@ html {
 #header {
     margin: 30px 0;
     height: 160px;
-    background-image: url('../img/esy.png');
+    background-image: url('../img/esy-udu.png');
     background-size: 150px auto;
     background-position: top left;
     background-repeat: no-repeat;
@@ -227,6 +228,12 @@ html {
   }
 }
 
+.pooleli {
+  background-color: rgba(113,20,14,0.9);
+  font-size: 0.8em;
+  color: white;
+  padding: 20px;
+}
 
 .footer {
     margin-top: 30px;
@@ -242,7 +249,7 @@ html {
     float: left;
     width: 120px;
     height: 120px;
-    background: url('../img/esy.png') top 20px left 20px no-repeat;
+    background: url('../img/esy-udu-v2ike.png') top 20px left 20px no-repeat;
     background-size: 90px 90px;
 }
 
