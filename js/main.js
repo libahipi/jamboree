@@ -21,7 +21,7 @@ App = {
             window.location.hash = to;
 
             if (to === '#/seis') {
-                $.getJSON('http://localhost:23745/teams', function(response) {
+                $.getJSON('http://must.commit.ee:23745/teams', function(response) {
                     console.log(response);
                 })
             }
