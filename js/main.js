@@ -4,10 +4,9 @@ App = {
     init: function() {
         window.onload = function routing() {
             var hash = window.location.hash;
-            if (['#jamboree', '#blog', '#osale', '#rules', '#teams', '#toeta'].indexOf(hash) !== -1) {
-                navigate(hash)
-            } else {
-                navigate('#404', hash);
+            console.log(hash);
+            if (['#/jamboree', '#/blog', '#/osale', '#/rules', '#/teams', '#/toeta'].indexOf(hash) !== -1) {
+                navigate(hash);
             }
         };
 
@@ -17,7 +16,7 @@ App = {
                 $anchor = $nav.find('a[href="'+to+'"]'),
                 $li = $anchor.closest('li');
             $pages.hide(); $nav.removeClass('active');
-            $pages.filter(to).show();
+            $pages.filter(to.replace(/\//, '')).show();
             $li.addClass('active');
             window.location.hash = to;
             window.scrollTo(0,0);
