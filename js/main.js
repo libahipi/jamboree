@@ -20,11 +20,13 @@ App = {
             $li.addClass('active');
             window.location.hash = to;
 
+            /*
             if (to === '#/seis') {
-                $.getJSON('http://must.commit.ee:23745/teams', function(response) {
+                $.getJSON('http://must.commit.ee:23745/teams?callback=?', function(response) {
                     console.log(response);
                 })
             }
+            */
         };
 
         $('#nav li').on('click', 'a', function(e) {
