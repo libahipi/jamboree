@@ -60,14 +60,14 @@ html {
 #wrap {
     position: absolute;
     width: 1100px;
-    margin-left: 50%;
-    left: -550px;
+    margin-left: -550px;
+    left: 50%;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1000px) {
     #wrap {
         width: 900px;
-        left: -450px;
+        margin-left: -450px;
     }
 }
 
