@@ -63,14 +63,13 @@ App = {
             }
 
             var leftoverdays = days - counter - 30;
-
             var secs = diff - days*24*3600,
                 hours = parseInt(secs/3600),
                 mins = parseInt((diff - days*24*3600 - hours*3600)/60);
 
             // write it to DOM
             $('.remaining-days').html(function() {
-                var str;
+                var str = '';
                 if (years) { str = years+' aasta, '; }
                 if (months) { str = str + months + (months === 1 ? ' kuu, ' : ' kuud, '); }
                 if (leftoverdays) { str = str + leftoverdays + (leftoverdays === 1 ? ' päev' : ' päeva'); }
