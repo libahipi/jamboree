@@ -55,7 +55,7 @@ html {
   left: -550px; }
 
 @media (max-width: 1024px) {
-  wrap {
+  #wrap {
     width: 900px;
     left: -450px; } }
 #header {
@@ -78,7 +78,7 @@ html {
   width: 600px;
   height: 600px;
   margin-top: -500px;
-  margin-left: 400px;
+  margin-left: 300px;
   float: right;
   padding-top: 500px;
   border-radius: 600px;
