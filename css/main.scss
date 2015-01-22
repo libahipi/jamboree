@@ -198,6 +198,10 @@ html {
   }
 }
 
+.block.wide .main {
+  width: 1060px;
+}
+
 .rules-1 {
   .side {
     background-image: url('../img/rules-1-2.jpg');
@@ -230,7 +234,7 @@ html {
 
 // blogi postituse pilt
 .rules-5 .side {
-  background-image: url('../img/rules-5.jpg');
+// background-image: url('../img/rules-5.jpg');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: auto 700px;

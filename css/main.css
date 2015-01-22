@@ -172,6 +172,9 @@ html {
     color: white;
     font-size: 0.9em; }
 
+.block.wide .main {
+  width: 1060px; }
+
 .rules-1 .side {
   background-image: url("../img/rules-1-2.jpg");
   background-position: center center;
@@ -194,7 +197,6 @@ html {
   background-repeat: no-repeat; }
 
 .rules-5 .side {
-  background-image: url("../img/rules-5.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: auto 700px; }
