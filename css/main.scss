@@ -95,12 +95,17 @@ body {
   padding-top: 500px;
   border-radius: 600px;
   background-color: rgba(223, 46, 14, 0.7);
-  font-family: 'Century Gothic';
   font-size: 1.2em;
   color: white;
   text-shadow: 0 1px rgba(0, 0, 0, 0.1);
   text-align: center;
   font-weight: bold;
+}
+
+@media (max-width: 479px) {
+  .timer {
+    display: none;
+  }
 }
 
 .timer .remaining-days {
