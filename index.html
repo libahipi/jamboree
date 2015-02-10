@@ -1,391 +1,656 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <meta name="viewport" content="initial-scale=1.0,width=device-width" />
-        <title>Eesti skaudid Jaapani Jamboreel</title>
-        <meta name="viewport" content="width=device-width">
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-        <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">-->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-    </head>
-    <body>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="initial-scale=1.0,width=device-width"/>
+  <title>Eesti skaudid Jaapani Jamboreel</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+</head>
+<body>
 
-        <div id="wrap">
-            <div id="header" class="clearfix">
-                <h1></h1>
-                <div class="timer">
-                    <span class="remaining-days"></span>
-                    <span class="remaining-mins"></span>
-                </div>
-            </div>
-            <ul id="nav" class="clearfix">
-                <li class="active first"><a href="#/jamboree">Jamboree?</a></li>
-                <li><a href="#/blog">What's up?</a></li>
-                <li><a href="#/osale">Tahan osaleda!</a></li>
-                <li><a href="#/rules">Võistluse reeglid</a></li>
-                <li><a href="#/seis">Võistluse seis</a></li>
-                <li><a href="#/toeta">Toeta :)</a></li>
-            </ul>
+  <div id="wrap" class="container-fluid">
+    <div id="header" class="clearfix">
+      <h1></h1>
 
-            <div class="page" id="jamboree">
-                <div class="what-is-jamboree clearfix">
-                    <div class="video-container"
-                         style="height: 248px; background-color: rgba(30,30,30,0.9); float: left; margin-right: 20px;">
-                        <iframe width="440" height="248" src="http://www.youtube.com/embed/c22Z2PU0mCg?rel=0" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                    <div class="jamboree-intro intro">
-                        <h1>Jamboree!?</h1>
-                        <p>
-                            Jamboree on iga 4 aasta tagant toimuv ülemaailmne skautide suurlaager, kus osaleb ligi
-                            40 000 skauti üle maa. Mõtle - 40 000! 10 laagripäeva jooksul saab suhelda, mängida, õppida,
-                            kogeda, areneda... Kõik, kes kunagi Jamboreel käinud on, võivad kinnitada, et see on
-                            ainukordne kogemus. Sinulgi on võimalus Jamboreel osaleda - seekord Jaapanis...
-                            <a href="http://www.flickr.com/photos/wsj2011" target="_blank" class="flickr-link" title="See avab uue akna">Vaata pilte eelmisest Jamboreest Rootsis</a>
-                        </p>
-                    </div>
-                    <div class="jamboree-longer">
+      <div class="timer">
+        <span class="remaining-days"></span>
+        <span class="remaining-mins"></span>
+      </div>
+    </div>
 
-                    </div>
-                </div>
-                <div class="about-japan clearfix">
-                    <div class="japan-2015-logo"></div>
-                    <div class="japan-intro intro">
-                        <h1>Jaapan 2015</h1>
-                        <p>
-                            28. juuli – 8. august 2015 toimub Kirara-Hamas, Jaapanis maailma 23. Jamboree, ehk skautide
-                            suurlaager. Eelnevatel aastatel Inglismaal ja Rootsis on kokku kogunenud üle 40 000 skaudi ja
-                            ega seekordki vähem oodata ole. Kui palju neist 40 000-st saavad olema eestlased? Siin me
-                            jõuamegi asja ivani – kuna Jaapan on kaugel-kaugel ja sinna minek on üpriski kallis, siis tuleb
-                            minekut planeerima hakata varakult.
-                            <a href="#more">Loe veel</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
+    <ul id="nav" class="clearfix">
+      <li class="active first"><a href="#/jamboree">Jamboree?</a></li>
+      <li><a href="#/blog">What's up?</a></li>
+      <li><a href="#/osale">Tahan osaleda!</a></li>
+      <li><a href="#/rules">Võistluse reeglid</a></li>
+      <li><a href="#/seis">Võistluse seis</a></li>
+      <li><a href="#/toeta">Toeta :)</a></li>
+      <li><a href="#/KKK">KKK</a></li>
+    </ul>
 
-            <div class="page" id="blog" style="display: none;">
-                <div class="left block rules-1 clearfix">
-                    <div class="side"></div>
-                    <div class="main">
-                    <h2>Siin lehel saab tutvuda uudiste ja arengutega, mis kõik viivad Jaapanisse sõiduni.</h2>
-                        <p>
-                            ...
-                        </p>
-                    </div>
-                </div>
-              <div class="block wide rules-5 clearfix">
-                <div class="main">
-                  <h2>Nõuanded Kertu Korelt, IST Rootsi Jamboreel 2011</h2>
-                  <p>
-                    <h3>Kust tuleb Sinu Jamboree kogemus?</h3><br>
+    <div class="page row" id="jamboree">
+      <div class="video-container col-sm-6">
+        <iframe src="http://www.youtube.com/embed/c22Z2PU0mCg?rel=0" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="jamboree-intro col-sm-6">
+        <h1>Jamboree!?</h1>
 
-                  Käisin Maailmajamboreel Rootisis IST-na 2011 aasta suvel,
-                  mil olin 18. aastane. Praegu olen 21.aastane ja üritan nõu anda neile Jamboree osavõtjatele,
-                  kes soovivad sellest suurest laagrist osa võtta 2015.aastal.<br><br>
+        <p>
+          Jamboree on iga 4 aasta tagant toimuv ülemaailmne skautide suurlaager, kus osaleb ligi
+          40 000 skauti üle maa. Mõtle - 40 000! 10 laagripäeva jooksul saab suhelda, mängida, õppida,
+          kogeda, areneda... Kõik, kes kunagi Jamboreel käinud on, võivad kinnitada, et see on
+          ainukordne kogemus. Sinulgi on võimalus Jamboreel osaleda - seekord Jaapanis...
+          <a href="http://www.flickr.com/photos/wsj2011" target="_blank" class="flickr-link" title="See avab uue akna">Vaata
+            pilte eelmisest Jamboreest Rootsis</a>
+        </p>
+      </div>
 
-                  <h3>Millele tuleks keskenduda enne jamboreele minekut?</h3><br>
+      <div class="japan-2015-intro col-sm-10">
+        <h1>Jaapan 2015</h1>
 
-                  Esiteks panen südamele, et eeltöö on väga tähtis. Igasugune info laagri kohta tuleb osavõtjale ainult kasuks,
-                  et olla võimalikult hästi valmistunud. See tähendab, et iga osavõtja peab laagrisse mineku hetkel nii vaimselt kui
-                  materiaalselt kindlustatud olema, sest ootamatused on kerged tulema. <br>
-                  Vaimsest ettevalmistusest tuleb valmis olla selleks, et ollakse palju ainult enda eest väljas. Mitte seda, et ollakse üksi,
-                  aga tuleb arvestada, et inimesed, kes Eestist osa võtavad on tegelikult ainukesed inimesed, kes on suuremal või vähemal määral tuttavad,
-                  ülejäänud inimesed on võõrad. Inimesed seal on supertublid ja ülisõbralikud, aga Eestist minnes on igas mõttes nii osavõtjatel kui
-                  ka IST-del kergem olukorraga toime tulla, kui minnakse koos inimestega, keda tuntakse. Tean, et see võib tunduda memmeka jutt, aga samas end
-                  selleks ei pea ja ometi oli
-                  laagris hakkama saamine katsumus omaette. Samas usun, et järgmisest laagrist osavõttes, on mu pilk hoopis teine, sest mingid kindlad teadmised
-                  on juba olemas.<br><br>
+        <p>
+          28. juuli – 8. august 2015 toimub Kirara-Hamas, Jaapanis maailma 23. Jamboree, ehk skautide
+          suurlaager. Eelnevatel aastatel Inglismaal ja Rootsis on kokku kogunenud üle 40 000 skaudi ja
+          ega seekordki vähem oodata ole. Kui palju neist 40 000-st saavad olema eestlased? Siin me
+          jõuamegi asja ivani – kuna Jaapan on kaugel-kaugel ja sinna minek on üpriski kallis, siis tuleb
+          minekut planeerima hakata varakult.
+          <a href="#/KKK" class="navlink">Loe veel</a>
+        </p>
+      </div>
+      <div class="japan-2015-logo col-sm-2"></div>
+    </div>
 
-                  <h3>Mis on ISTna minnes teistmoodi?</h3><br>
+    <div class="page" id="blog" style="display: none;">
+      <div class="left block rules-1 clearfix">
+        <div class="side"></div>
+        <div class="main">
+          <h2>Siin lehel saab tutvuda uudiste ja arengutega, mis kõik viivad Jaapanisse sõiduni.</h2>
 
-                  IST-dena minek on väga lihtne, peab ainult ise kõigega kursis olema. Aga kursis olemiseks on vaja suurepärast tööd juhilt,
-                  kes kordineerib ühe riigi osavõtjate minekut jamboreele. Samuti soovitan kõigil osavõtvatel IST-del palju konsulteerida nendega,
-                  kes on jamboreest juba osa võtnud. Ja need, kes on juba jamboreest osa võtnud peavad olema valmis rääkima nii headest kui halbadest
-                  jamboree kogemustest.<br><br>
-
-
-                  <h3>Kuidas on raha ja vajamineva varustusega?</h3><br>
-
-                  Jamboreest osavõtt on rahaliselt küllaltki suur väljaminek. Meie perest läks kaks last korraga ja kuna summad olid küllaltki suured ja osa tahtsime võtta
-                  mitte meie vanemad, vaid me
-                  ise, siis panustasime võimalikult palju sponsorite peale. Sel korral meil vedas ja pea pool osavõtutasust sai tasutud tänu sponsoritele. Aga osavõtutasu
-                  on ainult üks osa, lisandub veel kulu varustusele, vahetatavatele asjadele, kultuuripäeva esindusasjadele jne. Seda infot saate juba detailsemalt
-                  jamboreekogemusega inimestelt pärida. <br>
-                  Varustus muretsege korralik ja pakkige kaasa niipalju asju, kui palju teie transpordivahend lubab. Jällegi tehke tohutu eeltöö, et olla kursis antud
-                  koha kliima ja antud laagri võimalustega. Meid aitas väga palju varustuse poolelt kauplus Matkasport - kompaktsed, kvaliteetsed laagris hakkama saamise
-                  asjad jalanõudest kuni tõidunõudeni.<br><br>
-
-                  <h3>Mida sa ei osanud oodata?</h3><br>
-
-                  Jamboreel on rahvast kogu maailmast ja sealne tava on, et soovitakse vahetada teiste inimestega asju. Väga hinnas on Eesti lipu värvid märkidel, käepaeladel ja muidugi kaelarättidel. Aga vahetatakse ka särke, pusasid, tuulejopesid
-                  jne. Tahan öelda seda, et valmistage ette suur hulk Eestit esindavaid asju, mida saaks jagada. Meil oli ainult üks
-                  särk ja varukaelarätt, eestlastega koos elanud brasiillastel oli igaks päevaks üks särk vahetamiseks, mitu tuulejopet ja tohutustes kogustes käepaelu
-                  jms.<br><br>
-
-                  <h3>Mida sa oleksid soovinud, et oleks olnud paremini ette valmistatud juba Eestis?</h3><br>
-
-                  Iga laagri osa on kultuuripäev, mil iga esindus tutvustab teistele laagrilistele oma rahvale omaseid asju (nt. söök, tants, rahvariided jne.).
-                  Selle puhul tuleb ka teha tohtult ettevalmistusi ja jällegi mitte tunnike enne äraminekut.
-                  Meie pakkusime Rootsis Eesti kommi, šokolaadi ja kama ning kõike jäi puudu, sest iga osavõtja pakike kommi ei olnud huviliste arvule piisav kogus.<br><br>
-
-                  <h3>Jutu lõpetuseks...</h3><br>
-
-                  Põhiasjad, mida jälgida, panin kirja, aga nagu ka ennist mainisin, siis kõige tähtsam on ise info uurimine, varem osavõtnute jagamissoov ja
-                  suur eeltöö enne laagrit. Kes soovib minu või Kerli Kore käest jamboree ettevalmistumiseks infot, siis olge aga julged ühendust võtma. Selle
-                  jutunupukesega ei tahtnud ma kedagi hirmutada, aga lihtsalt
-                  meelde tuletada, et jamboreel käik on kogemus kogu eluks, aga sellest saab suurepärane elukogemus, kui veidi enne laagrit vaeva näha ja
-                  kõik läbi mõelda.<br><br>
-
-                  Kertu ja Kerliga saab kontakti facebooki kaudu või mõnes skaudilaagris silmast-silma kohtudes.
-
-                  </p>
-                </div>
-              </div>
-                <div class="block wide rules-5 clearfix">
-                    <div class="main">
-                        <h2>Võistlejad</h2>
-                        <p>
-                            Heia!<br>
-
-                            Algus sai antud läinud suve suurlaagris, stardipauk käis seal, aga see ei tähenda, et enam ei saaks võistlusega liituda!
-                            Mõned on aga juba eesmärgiga sõita Jamboreele tööd teinud juba tükk aega enne stardipauku.
-                            Igal juhul tasub ära märkida, et osalejaid on päris palju ja kokurents on täitsa olemas!<br><br>
-
-                            Seni endast märku andnud salgad on:<br>
-                            <ul>
-                            <li>1.  Suslikud (PSM)</li>
-                            <li>2.  Rohelised Rebased (TSGM)</li>
-                            <li>3.  Mustad Pantrid (TSGM) </li>
-                            <li>4.  Kotkas  (Siil)</li>
-                            <li>5.  Põdrakärbsed (LSM)</li>
-                            <li>6.  ...</li>
-                            </ul>
-                            ISTdeks pürgijad on:
-                            <ul>
-                            <li>1.  Birgit (Suslikud, PSM)</li>
-                            <li>2.  Hanna (Valged Tiigrid, TSGM)</li>
-                            <li>3.  Laura (Valged Tiigrid, TSGM)</li>
-                            <li>4.  Kärt (Valged Tiigrid, TSGM)</li>
-                            <li>5.  ...</li>
-                            </ul><br>
-                            CMTks pole veel keegi saada soovinud – aga eks veel on veidi aega ka!<br>
-
-                            Soovin kõikidele osalejatele palju pealehakkamist ja edu. Andke kindlasti igast oma edusammust teada, et saaks seda <a href="file:///C:/Users/liinala/Documents/Liina/Muu/jamboree/index.html#/seis">Võistluse seisu</a> lehel kajastada!<br><br>
-                            Teie HoC, <br>
-                            Liina<br>
-
-
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="page" id="osale" style="display: none;">
-                <div class="block right rules-7 clearfix">
-                    <div class="side"></div>
-                    <div class="main">
-                        <h1>Suurepärane!</h1>
-                        <p>
-                        Nii tore, et sa osaleda tahad!<br>
-
-                        Osalemiseks on Sul vaja oma <b>skaudisalka</b>, kuhjaga <b>pealehakkamist</b> ja <b>seiklustahet</b><br>
-
-                        Skaudisalka on vaja selle pärast, et võistluses saavad osaleda ainult skaudisalgad. Kui sinu salk ei soovi osaleda siis ära meelt heida, sa võid kokku panna päris oma salga kasvõi üle Eesti. <a href="file:///C:/Users/liinala/Documents/Liina/Muu/jamboree/index.html#/rules">Täpsemalt loe võistluse reeglitest...</a>
-
-                        Osalemise teeb kergemaks, kui Sinu salgal on täiskasvanud juhendaja, kes aitab teil välja mõelda, kuidas raha koguda ja võistluse muudes osades kõige paremini hakkama saada – näiteks korraldada fundraiser...<br><br>
-
-                        Räägi oma plaan ka oma ema-isaga läbi – mida nemad arvavad?<br><br>
-
-                            <p>Jamboree osalustasu on 1500€ (sllest 400€ on laagritasu ja ülejäänud trantsport ning muu reisiga ning osalemisega seonduv näiteks sümboolika)</p> <br><br>
-                        PS! Et jamboreel osaleda pead sa olema selle toimumise ajal 14-17 aastat vana. See tähendab, et sinu sünnikuupäev peab mahtuma järgmisesse javahemikku: 27. juuli 1997 ja 28. juuli 2001. <br>
-                        Kui sa oled vanem, siis saad sa osaleda jamboreel ISTna ehk täiskasvanud vabatahtlikuna. Jah, sind pannakse tööle. Jah see on ikkagi kõige ägedam laager üldse!</p>
-
-                        <h2> Kõlab põnevalt, eksole? Mis edasi?</h2>
-
-                    </div>
-                </div>
-                <div class="left block rules-1 clearfix">
-                    <div class="side"></div>
-                    <div class="main">
-
-                            <H3> KUI OLED SKAUDISALGA LIIGE </H3>
-                                <p>Kirjutage oma salgaga motivatsioonikiri mis sisaldab</p>
-                        <ul>
-                            <li> Miks just teie salk peaks saama minna ESÜ toatusega Jamboreele?</li>
-                            <li> Kui palju asju olete teinud ja kuidas need läinud on, jamboree võistlusest?</li>
-                            <li> Kuidas finantseerite oma Jamboreel osavõttu lisaks ESÜ toetusele, kui peaksite selle saama?</li>
-                            <li> Mis plaanid on teil salgana ja eraldi pärast Jamboreed skautlikul teel?</li>
-                            <li> Lühike kirjeldus iga salgaliikme kohta eraldi.</li>
-                        </ul>
-
-                            <H3> KUI OLED SKAUT ILMA SALGATA </H3>
-                            <p>Kirjuta motivatsioonikiri mis sisaldab</p>
-                                <ul>
-                                <li> Miks sa tahad minna jamboreele?</li>
-                                <li> Kuidas finantseerid oma jamboree osavõtutasu (1500€)</li>
-                                <li> Mis plaanid on sul pärast Jamboreed skautlikul teel?</li>
-                                <li> Lühike enese ja oma hobide ning huvide kirjeldus.</li>
-                                </ul>
-
-
-                            <H3> KUI OLED TÄISKASVANU </H3>
-                            <p>Kirjuta motivatsioonikiri mis sisaldab</p>
-                            <ul>
-                                <li> Miks sa tahad minna jamboreele?</li>
-                                <li> Kuidas finantseerid oma jamboree osavõtutasu (1500€) lisaks ESÜ toetusele, kui sa peaksid selle saama?</li>
-                                <li> Mis plaanid on sul pärast Jamboreed skautlikul teel?</li>
-                                <li> Lühike enese ja oma hobide ning huvide kirjeldus.</li>
-                                <li> Missugust tööd tahaksid Jamboreel meeleldi teha?</li>
-                            </ul>
-                        <p> Saatke motivatsioonikirjad 1. veebruariks aadressile liinaland@gmail.com ja HoC ja ESÜ juhatuse liikmed otsustavad,
-                            milline skaudisalk saab ESÜ toetuse osaliseks.
-                            Ka need, kes ei saa ESÜ toetuse osaliseks saavad siiski Jamboreel osaleda, kuid peavad maksma kogu laagri kulu - 1500€ - maksma ise.
-                            Motivatsioonikirju ootame ikkagi ka ilma salgata osalejatelt ning täiskasvanutelt, et hoida paremini silma peal osaleda soovijatel.</p>
-                    </div>
-                </div>
-
-                <div class="left block rules-1 clearfix">
-                    <div class="side"></div>
-                    <div class="main">
-                        <H3> KUI OLED TÄISKASVANUD SKAUT KES SOOVIB LIHTSALT PAAR PÄEVA JAMBOREED KÜLASTADA </H3>
-                        <p>Anna oma soovist teada arvestades:</p>
-                        <ul>
-                            <li> Kuni kahe ööline külastus on ainult etteregistreerimisel hiljemalt 2015 märtsi lõpuks koostöös Eesti kontingendi juhiga. Laagritasu on sel juhul
-                                skautidest külalistele 5000 jeeni päeva kohta. Külastamise aeg on piiratud. Uuri lähemalt HoCilt</li>
-                            <li> ühe üksiku päeva külastus kell 9-17 maksab täiskasvanule 2000 jeeni ja lapsele 1000 jeeni. Võimalik vaid valitud kuupäevadel.
-                                Pileteid müüakse Jamboree online poes, kui see avatakse. </li>
-
-                        </ul>
-                    </div>
-                 </div>
-            </div>
-
-            <div class="page" id="rules" style="display: none;">
-                <div class="left block rules-1 clearfix">
-                    <div class="side"></div>
-                    <div class="main">
-                        <h2>Skaudisalgad</h2>
-                        <ul>
-                            <li>Võistluses saavad osaleda 4-5 liikmelised SALGAD<ul>
-                            <li>Salk võib olla moodustatud ka eraldi just Jamboree võistluseks.</li>
-                            <li>Salgal ei ole geograafilisi piiranguid – üks võib olla Tartust, teine Tallinnast ja kolmas, neljas ja viies hoopis Türilt. Samas on kergem koostööd teha salgal, kes kohtuvad regulaarselt ja tihedalt.</li></ul></li>
-                            <li>Võistlus algas 2013 Suurlaagris MAM. Võistlusega saab veel liituda. Tee seda esimesel võimalusel!</li>
-                            <li>Võistlevate skautidega ja nende vanematega sõlmitakse leping, mille kohaselt loetakse nad Jamboreele sõitjateks. Pärast võitjate selgumist ja lõplike kulude teada saamist on võimalik lepingust kuni teatud kuupäevani taganeda, pidades silmas, et katta tuleb siiski need kulutused, mis osaleja peale on juba tehtud.</li>
-                            <li>2 aasta jooksul tuleb salgal<ul>
-                            <li>korraldada vähemalt üks <em>fundraiser</em></li>
-                            <li>leida vähemalt 2 sponsorit</li>
-                            <li>osaleda terve salgaga aastas vähemalt kahel üleriiglisel skaudiüritusel</li>
-                            <li>aidata korraldada aastas vähemalt ühte kohalikku skaudisündmust</li>
-                            <li>kirjutada vähemalt üks artikkel Eesti Skauti</li>
-                            <li>kirjutada motivatsioonikiri 2014 septembrks, mille alusel otsustab ESÜ juhatus ja Jamboree HoC, milline salk võitis.</li>
-                            <li>osaleda lisaülesannetes, mis selguvad jooksvalt.</li></ul></li>
-                            <li>Ülejäänud salkadel on ikkagi võimalus Jamboreele tulla, sest te olete ju endale leidnud sponsorid!</li>
-                            <li>Loomulikult saab Jamboreele tulla ka kõik kulud ise makstes, kuid võistluses osalemine on kohustuslik.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="block right rules-2 clearfix">
-                    <div class="main">
-                        <h2>Skaudijuhid</h2>
-                        <ul>
-                            <li>Võistlus algas 2013 Suurlaagris MAM. Osalevad hästi võistelnud salkade juhendajad. Võistlusega saab veel liituda.</li>
-                            <li>salgajuht on:<ul>
-                            <li>aktiivne skaudijuht</li>
-                            <li>võistlusperioodil osalenud vähemalt kahes üleriigilises skaudilaagris aastas</li>
-                            <li>võistlusperioodil korraldanud kaks kohaliku üksust või (malev/lipkond) sündmust</li>
-                            <li>võistlusperioodil teinud kaastööd Eesti Skaudile</li></ul></li>
-                            <li>Kirjuta motivatsioonikiri 2014 septembriks, mille alusel otsustab peastaap ja Jamboree HoC, milline skaudijuht võitis.</li>
-                            <li>Salgajuhtide hulk sõltub sellest, kui palju tuleb osalejaid ja kui palju on salgad endale raha kogunud.</li>
-                            <li>Tõenäoline on, et ESÜ toetatav salgajuht on ka võitnud salga juhendaja.</li>
-                        </ul>
-                    </div>
-                    <div class="side"></div>
-                </div>
-
-                <div class="block left rules-3 clearfix">
-                    <div class="side"></div>
-                    <div class="main">
-                        <h2>IST</h2>
-                        <ul>
-                            <li>Võistlus algas 2013 Suurlaagris. Võistlusega saab veel liituda.</li>
-                            <li>Võistluses saavad osaleda 2-3 liikmelised <em>buddy-systemid</em> kes:<ul>
-                            <li>leiavad vähemalt 2 sponsorit</li>
-                            <li>on võistlusperioodil osalenud üleriigilise skaudisündmuse korraldusmeeskonnas</li>
-                            <li>on aktiivselt aidanud kaasa skaudiürituste kordaminekule (nt. matkapunkti korraldused, tegevuspunkti läbiviimine jne)</li>
-                            <li>kirjutavad motivatsioonikirja 2014 septembrks, mille alusel otsustab peastaap ja Jamboree HoC, kes võitsid IST-de võistluse</li></ul></li>
-                            <li>aga kõik teised võistlejad saavad ka ikkagi tulla, sest sponsorid on ju leitud!</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="block right rules-4 clearfix">
-                    <div class="main">
-                        <h2>CMT</h2>
-                        <ul>
-                            <li>Võistlus algas 2013 Suurlaagris. Võistlusega saab veel liituda.</li>
-                            <li>Võistluses saavad osaleda täiskasvanud aktiivsed skaudijuhid või vabatahtlikud, kes on nõus Jamboree kontingendi korraldusse rohkem aega ja energiat paigutama nii enne sündmust kui ka kohapeal.</li>
-                            <li>Leiab vähemalt 2 sponsorit.</li>
-                            <li>Aitab sümboolika korralduses ja infomaterjalide korralduses.</li>
-                            <li>Aitab korraldada Home Hospitalityt.</li>
-                            <li>Aitab korraldada koostööd Läti ja Leeduga, mille eesmärgiks on ühine Baltikumi tutvustav telk Jamboreel.</li>
-                            <li>Aitab kirjutada projekte EASi jmt.</li>
-                            <li>Aitab malevatel leida rahastust kohalikelt omavalitsustelt Jamboreele sõitjate toetuseks!</li>
-                        </ul>
-                    </div>
-                    <div class="side"></div>
-                </div>
-            </div>
-
-            <div class="page" id="seis" style="display: none;">
-                <div class="center block rules-8 clearfix">
-                    <div class="side"></div>
-                    <div class="main">
-                        <h1>Usinate rahakogujate tulemused</h1>
-                        <img src="https://docs.google.com/spreadsheets/d/1LkRwxRg391j1Q2XmIzNuM1uO7B2yYM7Cm0OxVwrUUA0/embed/oimg?id=1LkRwxRg391j1Q2XmIzNuM1uO7B2yYM7Cm0OxVwrUUA0&oid=1753600262&zx=33qimo1o10bg" align="middle" />
-                    </div>
-                </div>
-            </div>
-
-            <div class="page" id="toeta" style="display: none;">
-            <div class="left block rules-9 clearfix">
-                    <div class="side"></div>
-                    <div class="main">
-                <h1>Iga toetus toob skautidele sära silmadesse!</h1>
-
-                <p>
-                   Jamboreele sõit on meie skautide jaoks päris kallis, kuid tahtmine minna suur. Selle nimel näevad noored ka ise tublisti vaeva müües näiteks enda küpsetisi skaudilaagrite kohvikutes ja pannes kõrvale suvel teenitud taskuraha. Iga toetus on samm ligemale noorte unistusele. Iga toetusega aitate muuta maailma paremaks kohaks, sest Jamboreel käik annab neile suure innustuse ka ise skaudijuhtideks saada ning omakorda lastele läbi skauditarkuste paremaks inimeseks kasvamist õpetada.
-
-                   <h2>SEB pank</h2>
-                    a/a EE58101002204944700<br>
-                    Pangakood: 401<br>
-                    SWIFT kood:  EEUHEE2X <br>
-                    Märksõna: Jamboree toetus (Salga nimi)
-                </p>
-                </div>
-            </div>
+          <p>
+            ...
+          </p>
         </div>
+      </div>
+      <div class="block wide rules-5 clearfix">
+        <div class="main">
+          <h2>Liina ja Kati IST kogemus Inglismaa Jamboreel 2007 (allkias: Eesti Skaut)</h2>
 
-            <div class="footer clearfix">
-                <div class="esy-logo"></div>
-                <div class="kes-ja-mis">
-                    <p>
-                        Info: liinaland@gmail.com ja telefonil 525 82 82
-                    </p>
-                </div>
-            </div>
+          <p>Inglismaale sõitis Eestist ainult kaks ISTd ehk International Service Team’i liiget. Mõned teravmeelikud
+            ristisid selle lühendi laagri jooksul ümber International Slavery Teamiks</p>
+
+          <p>Meie (loo autorid Katrin ja Liina koos välissekretär Taneliga) läksime noortest 3 päeva varem kohale, et end
+            koolitada ja oma tegevused valmis seada. Kohale jõudes oli meil rõõm suur – ei sadanudki vihma ja maapind oli
+            kuiv, saime rahulikult oma telgid üles panna. Üldse ilmaga meil vedas, esimesed kaks päeva sadas natuke ja
+            siis oli meil tõeline soparalli (kummikud olid kõige targemad kaasa võetud asjad), kuid see päev, kui noored
+            laagrisse tulid, paistis ainult päike ja nii kaks nädalat järjest. Vihma saime korra ühel õhtupoolikul ning
+            lõputseremoonial. Hiljem saime teada, et samal ajal kui meil päike paistis, evakueeriti Kesk-Inglismaalt
+            üleujutuste tõttu 230 000 inimest. Jah, meil vedas!</p>
+
+          <p>Meie elasime täiskasvanute all-laagris koos 10 000 skaudijuhiga üle maailma. Meie all-laager oli ühtlasi
+            suurim all-laager oma mahult. Seal oli väga põnev – alaealisi meie all-laagrisse ei lubatud, meil olid omad
+            tegevused, restoran, kus me kõik üheskoos söömas käisime ja „rand”, mis kujunes kokkusaamise ja trehvamise
+            kohaks. Igal õhtul toimusid erinevad vahvad üritused ja peod. Me tegime laagris palju tööd ja õhtuti oli väga
+            mõnus lõõgastuda ning erinevate maade skaudijuhtidega kogemusi vahetada ja tutvusi sõlmida.</p>
+
+          <p>Esimesel päeval toimus meil ISTde treening – tutvustati laagri reegleid, õpetati, kuidas mingis olukorras
+            käituda, mida me tohime noortega teha ja mida mitte. Inglismaal on väga ranged reeglid noortega suhtlemisel –
+            ei tohi näiteks võõra noorega üksi kinnisesse ruumi minna, kus pole aknaid (telki näiteks). Noortega ei
+            tohtinud ühtegi asja vahetada: märke, rätte jms. Samuti ei tohtinud noori kallistada, lähim lubatud kontakt
+            oli käepigistus.</p>
+
+          <p>Ülejäänud aja, mil veel osalejad kohal ei olnud, ehitasime World Village´t, kus toimusid meie tegevuspunktid.
+            Tegime Eestiteemalisi tegvuspunkte – martsipani ja õlenukke. Materjalid muretses meile Jamboree korraldus,
+            kuid inglaste arusaam õlgedest on väga teistsugune – paberist õled.</p>
+
+          <p>World Village oli üks suurimaid tegevusalasid, seal olid esindatud peaaegu kõik 152 riiki, kust skaute
+            maailmalaagrisse tuli, ning kõik tutvustasid läbi erinevate tegevuste oma riiki ja kultuuri: austrialastel oli
+            näiteks kino, kus nägi filmi Austria kohta ning samal ajal oli tunda lõhnu, tuult, vihma ning isegi toolist
+            pidi väga kõvasti kinni hoidma, kuna ka see liikus ja rappus, kui ekraanil näiteks hobusevanker sõitis.
+            Tegevusi oli seinast seina alates erinevate maade rahvariietest, mida sai selga proovida ning pilti teha ja
+            lõpetades tantsude, mängude, muusika ja käsitööga. Ühed populaarsemad tegevused olid muidugi rahvustoidud.
+            Meie martsipanipunktis oli pidevalt järjekord. Noored olid väga huvitatud Eestist ja meie kultuurist.
+            Imekombel paljud ka teadsid, kus me asume. Eriti teadlikud olid Brasiilia ja Ameerika Ühendriikide
+            skaudid.</p>
+
+          <p>Meie World Village oli avatud iga päev alates laagri avamisest 10.00-12.30 ja 13.30-16.00 kuni laagri lõpuni,
+            v.a. Scouting Sunrise päev. Tegime seal nagu päris tööd. Hommikul tõusime vara, kuna meie all-laager asub 45
+            minuti jalgsitee kaugusel meie töökohast (kuigi pikapeale olime juba selle tee kõmpimisel nii vilunud, et
+            läbisime selle maa 20 minutiga, üleüldse tuleb välja, et me oleme kiired kõndijad võrreldes näiteks
+            venetsueelalastega, kes kasvõi stardivad varem, et ei peaks kiiresti kõndima). Sellest hoolimata, et päevad
+            olid pikad ning tööd oli palju, nautisime iga päeva ning saime palju uusi ja häid ideid ja kogemusi. Paljud
+            juhid tulid ise meiega kontakte looma. Huvi Eesti vastu on väga suur. Kusjuures, meie arvates võis üheks
+            suureks huvitekitajaks olla ka meie välimus – kaks blondi kena neiut. Kui järele mõelda, siis enamasti tuldi
+            meiega tutvust tegema sellistest riikidest nagu Venezuela, Argentiina, Nigeeria, Kariibi mere saared jne.</p>
+
+          <p>Õhtud olid meil vabad igasugu kohustustest ning siis me nautisime täiel rinnal laagrielu. Nii huvitav oli
+            õppida erinevate maade tantse, laule ning mänge. Saime palju uusi sõpru üle maailma ning kogesime, et väljend
+            scouts are more than friends, mida laagris rõhutati, on tõsi. See on võimas tunne, kui see suur hulk skaute
+            töötab ühe eesmärgi nimel ning teeb seda naeratades. See tunne – let´s make a better world – oli väga hea ja
+            inspireeriv. Suurepärane kogemus oli ka laagriõhkkonna nautimine. Selles laagris oli nii suurepärane
+            positiivne energia: päike paistab, kõnnid töölt koju ja naeratad vastutulijatele, ütled suvalisele skaudile
+            tere ja ta vastab sulle. Kõige enam igatseme just seda head tunnet, mis meid valdas laagrialal ringi
+            kõndides.</p>
+
+          <p>Erilisim päev oli Scouting Sunrise. Nagu ütles üks meie uus sõber, 44-aastase skaudistaažiga Semmel
+            Saksamaalt: „See oli midagi hingele.”</p>
+
+          <p>Tõusime hommikul kell 6 ning kogunesime, et üheskoos peaväljakule minna. Sinna kogunes kogu laager. Ühiselt
+            sõime hommikusööki, vaatasime otseülekannet Brownsea saarelt, kus oma skaudivannet uuendas kaks skauti igalt
+            maalt. Päike oli just tõusnud ning me andsime kõik üheskoos, igaüks omas keeles, veelkord oma skauditõotuse.
+            Siis luges skautluse rajaja Baden-Powelli lapselaps ette oma vanaisa testamendi, kus ta selgitas, mis on õnn
+            ja mis selle saavutamiseks teha tuleb. See pani iga skaudi mõtlema ning tõi nii mõnelegi silma pisarad.
+            Ühtsustunne sel hetkel oli väga suur. Meile kõigile jagati selleks päevaks spetsiaalsed kollased kaelarätid
+            ning pastakas. Ülesandeks anti koguda 100 nime erinevate maade skautidelt. See oli väga vahva ja väga hea
+            mälestus.</p>
+
+          <p>Laagrile tagasi mõeldes võib kindlalt öelda, et kõige rohkem jääme igatsema oma uusi sõpru ja laagri
+            positiivset õhkkonda, sõprustunnet ja ühise eesmärgi nimel töötamise tunnet. See laager oli suurepärane näide
+            sellest, mida on võimalik korda saata suure tahtmise ja sõprusega. Korraldada laagrit 40 000 noorele ja
+            täiskasvanule oli selle hetkeni fantaasia. Uhkusega võime laagrile tagasi mõelda ja teada, et meie kahekesi
+            aitasime sellele tõeliselt suurele üritusele kaasa.</p>
+
+          <p>Skj. KATRIN RATAS Lääne Skautide Malevast ja skj. LIINA LAND Tartu Ilvese lipkonnast</p>
         </div>
+      </div>
+      <div class="block wide rules-5 clearfix">
+        <div class="main">
+          <h2>Edgar Laksa osaleja kogemus Inglismaa Jamboreel 2007 (allkias: Eesti Skaut)</h2>
 
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        <script src="js/main.js"></script>
-    </body>
+          <p>See laager rokkis. Kohe täiega. Tegevust oli ja palju ja rohkesti, eriti meeldis mulle märkide vahetamine
+            (swapping, trading, exchanging). Lahe oli see, et meie all-laagri lähedal oligi põhiline koht, kus märke
+            vahetati, kurb aga see, et meil polnud sellist oma märki, Eesti märki, mida oleks saanud vahetada, aga mul
+            olid mõned Jüripäeva märgid, mille vastu tunti väga palju huvi. Laagri lõpupoole hakati seal isegi riideid ja
+            oma riigi sümboolikat vahetama. Boriss meie rühmast vahetas laagri viimasel päeval oma šoti kildi (mida paljud
+            nimetasid seelikuks) suure sombreero vastu, mille diameeter oli veidike rohkem kui meeter.</p>
+
+          <p>Tegevusi oli laagris ülipalju, kuigi mõnedel päevadel sõitsime bussidega teistesse kohtadesse (Gilwell Park,
+            Spalsh jne.). Ja kontserdid, need olid ka päris head, mis toimusid suurel laval. Kuigi võlts Kylie Minogue ja
+            võlts Robbie Williams, kes esinesid ühel õhtul, panid pettuma. Igal õhtul oli ka karaoke, kust paljud skaudid
+            osa võtsid.</p>
+
+          <p>Eriti lahe oli Brownsea laager, kuhu sai ainult kaks inimest igast riigist. Eesti skautidest pääsesime sinna
+            meie riiki esindama mina ja Liis Teller. Vägev tunne oli küll. Kõigepealt jõudsime bussidega sadamasse, kust
+            pidime praami peale minema ja sealt Brownseale sõitma...muidugi suure lauluga! Üks juht õpetas meile isegi ühe
+            uue laulu selgeks. Naljakas oli vaadata seda, kui saare ümber olev vesi oli täis jahte ja paate, aga saar ise
+            on väheasustatud. Saarel on ka looduskaitseala, mis ei hõlma kogu saart, vaid umbes pool. Ülejäänu on vist
+            skautide oma. Saarel on ka kaks mälestusmärki: üks on sadama lähedal – B-P büst ja teine saare ühes küljes –
+            mälestuskivi esimesele laagrile. Saar on muidu looduse poolest väga ilus ja kaunis, pole ime, et Baden-Powell
+            seal selle esimese laagri tegi.</p>
+
+          <p>Kõigepealt, kui laagrisse jõudsime, mõtlesin, et seame seal end sisse, aga selle asemel viidi meid saare ühte
+            ossa ja seal hakkasime karnevaliks rütmiriistu valmistama. Karneval oli tore, iga rühm pidi tegema oma asjad
+            (ahjaa...laagris oli ju neli rühma: pullid, hundid, rongad ja kurvitsad, meie olime huntide all-laagris).
+            Peale karnevali oli laagri avamine, millele järgnes õhtul PIDU. Peol esines ülihea bänd, mis lihtsalt pani
+            pidutsema (bluesrockrock`n`roll bänd oli vist). Peale seda aga magama.</p>
+
+          <p>Oma nali oli ka telkidega, mis olid sellised vanaaegsed ja suured, aga mitte nii suured, et kuus-seitse
+            inimest korraga sisse mahuksid. Õnneks mahtusime ilusti, kuid ma sattusin otse telgi ava juurde magama, nii et
+            polnud haruldus kui keegi mulle otsa komistas ja ülejäänud rahvale peale kukkus. Äratus oli ka vahva: hommikul
+            pandi makk täie võimsusega üürgama ning juhid hüüdsid ja laulsid veel takka, nii et edasimagamine oli võimatu.
+            Teisel päeval hakkasid tegevused. Meile tutvustati saart ja õpetati veidike tsirkusetrikke, pärast koristasin
+            paljude teistega võsa, mis oli seal hirmus nuhtlus ning tihedam ja suurem kui meie võsad.</p>
+
+          <p>Kolmandal päeval ehk Scouting Sunrise ajal aeti meid kell 4 hommikul üles ütlustega, et tuleb väga tähtis
+            hommik ja BBC on seal filmimas. Panime vormid selga ja läksime hommikust sööma. Peab märkima seda ka, et kogu
+            laagriaja sõime seal taimetoitu, mis oli väga maitsev, nii et lihast väga puudust ei tundnud. Siis läksime
+            platsile, kus see üritus toimuma pidi ja uuendasime oma skauditõotust. Peale tõotuse uuendamist oli söömine ja
+            laagri lõpetamine ning hüvastijätmine.</p>
+
+          <p>Kuigi ka kogu ülejäänud Jamboree muljed olid vägevad kirjutasin eelkõige Brownsea saarest, kus ainult meil
+            Liisiga õnnestus viibida. Loodan, et kõigil teistelgi mu sõpradel oli sama tore, kui minul.</p>
+
+          <p>EDGAR LAKSA, PSGM Saarde lipkonnast 21. Scout Jamboree osavõtja </p>
+
+        </div>
+      </div>
+      <div class="block wide rules-5 clearfix">
+        <div class="main">
+          <h2>Nõuanded Kertu Korelt, IST Rootsi Jamboreel 2011</h2>
+
+          <p>
+
+          <h3>Kust tuleb Sinu Jamboree kogemus?</h3><br>
+
+          Käisin Maailmajamboreel Rootisis IST-na 2011 aasta suvel,
+          mil olin 18. aastane. Praegu olen 21.aastane ja üritan nõu anda neile Jamboree osavõtjatele,
+          kes soovivad sellest suurest laagrist osa võtta 2015.aastal.<br><br>
+
+          <h3>Millele tuleks keskenduda enne jamboreele minekut?</h3><br>
+
+          Esiteks panen südamele, et eeltöö on väga tähtis. Igasugune info laagri kohta tuleb osavõtjale ainult kasuks,
+          et olla võimalikult hästi valmistunud. See tähendab, et iga osavõtja peab laagrisse mineku hetkel nii vaimselt
+          kui
+          materiaalselt kindlustatud olema, sest ootamatused on kerged tulema. <br>
+          Vaimsest ettevalmistusest tuleb valmis olla selleks, et ollakse palju ainult enda eest väljas. Mitte seda, et
+          ollakse üksi,
+          aga tuleb arvestada, et inimesed, kes Eestist osa võtavad on tegelikult ainukesed inimesed, kes on suuremal või
+          vähemal määral tuttavad,
+          ülejäänud inimesed on võõrad. Inimesed seal on supertublid ja ülisõbralikud, aga Eestist minnes on igas mõttes
+          nii osavõtjatel kui
+          ka IST-del kergem olukorraga toime tulla, kui minnakse koos inimestega, keda tuntakse. Tean, et see võib tunduda
+          memmeka jutt, aga samas end
+          selleks ei pea ja ometi oli
+          laagris hakkama saamine katsumus omaette. Samas usun, et järgmisest laagrist osavõttes, on mu pilk hoopis teine,
+          sest mingid kindlad teadmised
+          on juba olemas.<br><br>
+
+          <h3>Mis on ISTna minnes teistmoodi?</h3><br>
+
+          IST-dena minek on väga lihtne, peab ainult ise kõigega kursis olema. Aga kursis olemiseks on vaja suurepärast
+          tööd juhilt,
+          kes kordineerib ühe riigi osavõtjate minekut jamboreele. Samuti soovitan kõigil osavõtvatel IST-del palju
+          konsulteerida nendega,
+          kes on jamboreest juba osa võtnud. Ja need, kes on juba jamboreest osa võtnud peavad olema valmis rääkima nii
+          headest kui halbadest
+          jamboree kogemustest.<br><br>
+
+
+          <h3>Kuidas on raha ja vajamineva varustusega?</h3><br>
+
+          Jamboreest osavõtt on rahaliselt küllaltki suur väljaminek. Meie perest läks kaks last korraga ja kuna summad
+          olid küllaltki suured ja osa tahtsime võtta
+          mitte meie vanemad, vaid me
+          ise, siis panustasime võimalikult palju sponsorite peale. Sel korral meil vedas ja pea pool osavõtutasust sai
+          tasutud tänu sponsoritele. Aga osavõtutasu
+          on ainult üks osa, lisandub veel kulu varustusele, vahetatavatele asjadele, kultuuripäeva esindusasjadele jne.
+          Seda infot saate juba detailsemalt
+          jamboreekogemusega inimestelt pärida. <br>
+          Varustus muretsege korralik ja pakkige kaasa niipalju asju, kui palju teie transpordivahend lubab. Jällegi tehke
+          tohutu eeltöö, et olla kursis antud
+          koha kliima ja antud laagri võimalustega. Meid aitas väga palju varustuse poolelt kauplus Matkasport -
+          kompaktsed, kvaliteetsed laagris hakkama saamise
+          asjad jalanõudest kuni tõidunõudeni.<br><br>
+
+          <h3>Mida sa ei osanud oodata?</h3><br>
+
+          Jamboreel on rahvast kogu maailmast ja sealne tava on, et soovitakse vahetada teiste inimestega asju. Väga
+          hinnas on Eesti lipu värvid märkidel, käepaeladel ja muidugi kaelarättidel. Aga vahetatakse ka särke, pusasid,
+          tuulejopesid
+          jne. Tahan öelda seda, et valmistage ette suur hulk Eestit esindavaid asju, mida saaks jagada. Meil oli ainult
+          üks
+          särk ja varukaelarätt, eestlastega koos elanud brasiillastel oli igaks päevaks üks särk vahetamiseks, mitu
+          tuulejopet ja tohutustes kogustes käepaelu
+          jms.<br><br>
+
+          <h3>Mida sa oleksid soovinud, et oleks olnud paremini ette valmistatud juba Eestis?</h3><br>
+
+          Iga laagri osa on kultuuripäev, mil iga esindus tutvustab teistele laagrilistele oma rahvale omaseid asju (nt.
+          söök, tants, rahvariided jne.).
+          Selle puhul tuleb ka teha tohtult ettevalmistusi ja jällegi mitte tunnike enne äraminekut.
+          Meie pakkusime Rootsis Eesti kommi, šokolaadi ja kama ning kõike jäi puudu, sest iga osavõtja pakike kommi ei
+          olnud huviliste arvule piisav kogus.<br><br>
+
+          <h3>Jutu lõpetuseks...</h3><br>
+
+          Põhiasjad, mida jälgida, panin kirja, aga nagu ka ennist mainisin, siis kõige tähtsam on ise info uurimine,
+          varem osavõtnute jagamissoov ja
+          suur eeltöö enne laagrit. Kes soovib minu või Kerli Kore käest jamboree ettevalmistumiseks infot, siis olge aga
+          julged ühendust võtma. Selle
+          jutunupukesega ei tahtnud ma kedagi hirmutada, aga lihtsalt
+          meelde tuletada, et jamboreel käik on kogemus kogu eluks, aga sellest saab suurepärane elukogemus, kui veidi
+          enne laagrit vaeva näha ja
+          kõik läbi mõelda.<br><br>
+
+          Kertu ja Kerliga saab kontakti facebooki kaudu või mõnes skaudilaagris silmast-silma kohtudes.
+
+          </p>
+        </div>
+      </div>
+      <div class="block wide rules-5 clearfix">
+        <div class="main">
+          <h2>Võistlejad</h2>
+
+          <p>
+            Heia!<br>
+
+            Algus sai antud läinud suve suurlaagris, stardipauk käis seal, aga see ei tähenda, et enam ei saaks
+            võistlusega liituda!
+            Mõned on aga juba eesmärgiga sõita Jamboreele tööd teinud juba tükk aega enne stardipauku.
+            Igal juhul tasub ära märkida, et osalejaid on päris palju ja kokurents on täitsa olemas!<br><br>
+
+            Seni endast märku andnud salgad ja skaudid on:<br>
+          <ul>
+            <li>1. Rohelised Rebased (TSGM)</li>
+            <li>2. ...</li>
+
+          </ul>
+          ISTdeks pürgijad on:
+          <ul>
+            <li>1. Margaret, TSGM</li>
+            <li>2. Siim, TSGM</li>
+            <li>3. Tarmo, Okaskannel</li>
+            <li>4. ...</li>
+            <li>5. ...</li>
+          </ul>
+          <br>
+          CMTks pole veel keegi saada soovinud – aga eks veel on veidi aega ka!<br>
+
+          Soovin kõikidele osalejatele palju pealehakkamist ja edu. Andke kindlasti igast oma edusammust teada, et saaks
+          seda <a href="file:///C:/Users/liinala/Documents/Liina/Muu/jamboree/index.html#/seis">Võistluse seisu</a> lehel
+          kajastada!<br><br>
+          Teie HoC, <br>
+          Liina<br>
+
+
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="page" id="osale" style="display: none;">
+      <div class="block right rules-7 clearfix">
+        <div class="side"></div>
+        <div class="main">
+          <h1>Suurepärane!</h1>
+
+          <p>
+            Nii tore, et sa osaleda tahad!<br>
+
+            <b>NB! ESÜ toetuse konkursi laiendus - uus tähtaeg on 15. veebruar!</b><br><br>
+            Jaapani Jamboree on iga skaudi jaoks ükskord-elus-kogemus. Sellepärast on kahju näha, nii mõnedki vahvad
+            skaudid
+            ei saanud Jamboree võistlusest osa võtta salga toetuse puudumise tõttu. ESÜ juhatus koos HoCiga otsustas
+            laiendada
+            konkurssi ESÜ toetusele ka <b>üksikutele skautidele</b>. Samuti ootame veel täiskasvanud skaute, kes sooviksid
+            jamboreest
+            osa võtta IST või skaudijuhina.<br> <br>
+
+            Motivatsioonikirja tähtaeg on 15. veebruar. Motivatsioonikiri saatke liinaland@gmail.com (koopia:
+            international@skaut.ee)<br><br>
+
+
+            Räägi oma plaan ka oma ema-isaga läbi – mida nemad arvavad?<br>
+
+          <p>Jamboree osalustasu on 1500€ (sellest 400€ on laagritasu ja ülejäänud trantsport ning muu reisiga ning
+            osalemisega seonduv näiteks sümboolika)</p> <br>
+          PS! Et jamboreel osaleda pead sa olema selle toimumise ajal 14-17 aastat vana. See tähendab, et sinu
+          sünnikuupäev peab mahtuma järgmisesse javahemikku: 27. juuli 1997 ja 28. juuli 2001. <br>
+          Kui sa oled vanem, siis saad sa osaleda jamboreel ISTna ehk täiskasvanud vabatahtlikuna. Jah, sind pannakse
+          tööle. Jah see on ikkagi kõige ägedam laager üldse!</p>
+        </div>
+      </div>
+      <div class="left block rules-1 clearfix">
+        <div class="side"></div>
+        <div class="main">
+
+          <H3> KUI OLED SKAUDISALGA LIIGE </H3>
+
+          <p>Kirjutage oma salgaga motivatsioonikiri mis sisaldab</p>
+          <ul>
+            <li> Miks just teie salk peaks saama minna ESÜ toatusega Jamboreele?</li>
+            <li> Kui palju asju olete teinud ja kuidas need läinud on, jamboree võistlusest?</li>
+            <li> Kuidas finantseerite oma Jamboreel osavõttu lisaks ESÜ toetusele, kui peaksite selle saama?</li>
+            <li> Mis plaanid on teil salgana ja eraldi pärast Jamboreed skautlikul teel?</li>
+            <li> Lühike kirjeldus iga salgaliikme kohta eraldi.</li>
+          </ul>
+
+          <H3> KUI OLED SKAUT ILMA SALGATA </H3>
+
+          <p>Kirjuta motivatsioonikiri mis sisaldab</p>
+          <ul>
+            <li> Miks sa tahad minna jamboreele?</li>
+            <li> Kuidas finantseerid oma jamboree osavõtutasu (1500€)</li>
+            <li> Mis plaanid on sul pärast Jamboreed skautlikul teel?</li>
+            <li> Lühike enese ja oma hobide ning huvide kirjeldus.</li>
+          </ul>
+
+
+          <H3> KUI OLED TÄISKASVANU </H3>
+
+          <p>Kirjuta motivatsioonikiri mis sisaldab</p>
+          <ul>
+            <li> Miks sa tahad minna jamboreele?</li>
+            <li> Kuidas finantseerid oma jamboree osavõtutasu (1500€) lisaks ESÜ toetusele, kui sa peaksid selle saama?
+            </li>
+            <li> Mis plaanid on sul pärast Jamboreed skautlikul teel?</li>
+            <li> Lühike enese ja oma hobide ning huvide kirjeldus.</li>
+            <li> Missugust tööd tahaksid Jamboreel meeleldi teha?</li>
+          </ul>
+          <p> Saatke motivatsioonikirjad 1. veebruariks aadressile liinaland@gmail.com ja HoC ja ESÜ juhatuse liikmed
+            otsustavad,
+            milline skaudisalk saab ESÜ toetuse osaliseks.
+            Ka need, kes ei saa ESÜ toetuse osaliseks saavad siiski Jamboreel osaleda, kuid peavad maksma kogu laagri kulu
+            - 1500€ - maksma ise.
+            Motivatsioonikirju ootame ikkagi ka ilma salgata osalejatelt ning täiskasvanutelt, et hoida paremini silma
+            peal osaleda soovijatel.</p>
+        </div>
+      </div>
+
+      <div class="left block rules-1 clearfix">
+        <div class="side"></div>
+        <div class="main">
+          <H3> KUI OLED TÄISKASVANUD SKAUT KES SOOVIB LIHTSALT PAAR PÄEVA JAMBOREED KÜLASTADA </H3>
+
+          <p>Anna oma soovist teada arvestades:</p>
+          <ul>
+            <li> Kuni kahe ööline külastus on ainult etteregistreerimisel hiljemalt 2015 märtsi lõpuks koostöös Eesti
+              kontingendi juhiga. Laagritasu on sel juhul
+              skautidest külalistele 5000 jeeni päeva kohta. Külastamise aeg on piiratud. Uuri lähemalt HoCilt
+            </li>
+            <li> ühe üksiku päeva külastus kell 9-17 maksab täiskasvanule 2000 jeeni ja lapsele 1000 jeeni. Võimalik vaid
+              valitud kuupäevadel.
+              Pileteid müüakse Jamboree online poes, kui see avatakse.
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="page" id="rules" style="display: none;">
+      <div class="left block rules-1 clearfix">
+        <div class="side"></div>
+        <div class="main">
+          <h2>Skaudisalgad</h2>
+          <ul>
+            <li>Võistluses saavad osaleda 4-5 liikmelised SALGAD
+              <ul>
+                <li>Salk võib olla moodustatud ka eraldi just Jamboree võistluseks.</li>
+                <li>Salgal ei ole geograafilisi piiranguid – üks võib olla Tartust, teine Tallinnast ja kolmas, neljas ja
+                  viies hoopis Türilt. Samas on kergem koostööd teha salgal, kes kohtuvad regulaarselt ja tihedalt.
+                </li>
+              </ul>
+            </li>
+            <li>Võistlus algas 2013 Suurlaagris MAM. Võistlusega saab veel liituda. Tee seda esimesel võimalusel!</li>
+            <li>Võistlevate skautidega ja nende vanematega sõlmitakse leping, mille kohaselt loetakse nad Jamboreele
+              sõitjateks. Pärast võitjate selgumist ja lõplike kulude teada saamist on võimalik lepingust kuni teatud
+              kuupäevani taganeda, pidades silmas, et katta tuleb siiski need kulutused, mis osaleja peale on juba tehtud.
+            </li>
+            <li>2 aasta jooksul tuleb salgal
+              <ul>
+                <li>korraldada vähemalt üks <em>fundraiser</em></li>
+                <li>leida vähemalt 2 sponsorit</li>
+                <li>osaleda terve salgaga aastas vähemalt kahel üleriiglisel skaudiüritusel</li>
+                <li>aidata korraldada aastas vähemalt ühte kohalikku skaudisündmust</li>
+                <li>kirjutada vähemalt üks artikkel Eesti Skauti</li>
+                <li>kirjutada motivatsioonikiri 2014 septembrks, mille alusel otsustab ESÜ juhatus ja Jamboree HoC,
+                  milline salk võitis.
+                </li>
+                <li>osaleda lisaülesannetes, mis selguvad jooksvalt.</li>
+              </ul>
+            </li>
+            <li>Ülejäänud salkadel on ikkagi võimalus Jamboreele tulla, sest te olete ju endale leidnud sponsorid!</li>
+            <li>Loomulikult saab Jamboreele tulla ka kõik kulud ise makstes, kuid võistluses osalemine on kohustuslik.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="block right rules-2 clearfix">
+        <div class="main">
+          <h2>Skaudijuhid</h2>
+          <ul>
+            <li>Võistlus algas 2013 Suurlaagris MAM. Osalevad hästi võistelnud salkade juhendajad. Võistlusega saab veel
+              liituda.
+            </li>
+            <li>salgajuht on:
+              <ul>
+                <li>aktiivne skaudijuht</li>
+                <li>võistlusperioodil osalenud vähemalt kahes üleriigilises skaudilaagris aastas</li>
+                <li>võistlusperioodil korraldanud kaks kohaliku üksust või (malev/lipkond) sündmust</li>
+                <li>võistlusperioodil teinud kaastööd Eesti Skaudile</li>
+              </ul>
+            </li>
+            <li>Kirjuta motivatsioonikiri 2014 septembriks, mille alusel otsustab peastaap ja Jamboree HoC, milline
+              skaudijuht võitis.
+            </li>
+            <li>Salgajuhtide hulk sõltub sellest, kui palju tuleb osalejaid ja kui palju on salgad endale raha kogunud.
+            </li>
+            <li>Tõenäoline on, et ESÜ toetatav salgajuht on ka võitnud salga juhendaja.</li>
+          </ul>
+        </div>
+        <div class="side"></div>
+      </div>
+
+      <div class="block left rules-3 clearfix">
+        <div class="side"></div>
+        <div class="main">
+          <h2>IST</h2>
+          <ul>
+            <li>Võistlus algas 2013 Suurlaagris. Võistlusega saab veel liituda.</li>
+            <li>Võistluses saavad osaleda 2-3 liikmelised <em>buddy-systemid</em> kes:
+              <ul>
+                <li>leiavad vähemalt 2 sponsorit</li>
+                <li>on võistlusperioodil osalenud üleriigilise skaudisündmuse korraldusmeeskonnas</li>
+                <li>on aktiivselt aidanud kaasa skaudiürituste kordaminekule (nt. matkapunkti korraldused, tegevuspunkti
+                  läbiviimine jne)
+                </li>
+                <li>kirjutavad motivatsioonikirja 2014 septembrks, mille alusel otsustab peastaap ja Jamboree HoC, kes
+                  võitsid IST-de võistluse
+                </li>
+              </ul>
+            </li>
+            <li>aga kõik teised võistlejad saavad ka ikkagi tulla, sest sponsorid on ju leitud!</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="block right rules-4 clearfix">
+        <div class="main">
+          <h2>CMT</h2>
+          <ul>
+            <li>Võistlus algas 2013 Suurlaagris. Võistlusega saab veel liituda.</li>
+            <li>Võistluses saavad osaleda täiskasvanud aktiivsed skaudijuhid või vabatahtlikud, kes on nõus Jamboree
+              kontingendi korraldusse rohkem aega ja energiat paigutama nii enne sündmust kui ka kohapeal.
+            </li>
+            <li>Leiab vähemalt 2 sponsorit.</li>
+            <li>Aitab sümboolika korralduses ja infomaterjalide korralduses.</li>
+            <li>Aitab korraldada Home Hospitalityt.</li>
+            <li>Aitab korraldada koostööd Läti ja Leeduga, mille eesmärgiks on ühine Baltikumi tutvustav telk Jamboreel.
+            </li>
+            <li>Aitab kirjutada projekte EASi jmt.</li>
+            <li>Aitab malevatel leida rahastust kohalikelt omavalitsustelt Jamboreele sõitjate toetuseks!</li>
+          </ul>
+        </div>
+        <div class="side"></div>
+      </div>
+    </div>
+
+    <div class="page" id="seis" style="display: none;">
+      <div class="center block rules-8 clearfix">
+        <div class="side"></div>
+        <div class="main">
+          <h1>Usinate rahakogujate tulemused</h1>
+          <img
+              src="https://docs.google.com/spreadsheets/d/1LkRwxRg391j1Q2XmIzNuM1uO7B2yYM7Cm0OxVwrUUA0/embed/oimg?id=1LkRwxRg391j1Q2XmIzNuM1uO7B2yYM7Cm0OxVwrUUA0&oid=1753600262&zx=33qimo1o10bg"
+              align="middle"/>
+        </div>
+      </div>
+    </div>
+
+    <div class="page" id="toeta" style="display: none;">
+
+      <div class="left block rules-9 clearfix">
+        <div class="side"></div>
+        <div class="main">
+          <h1>Iga toetus toob skautidele sära silmadesse!</h1>
+
+          <p>
+            Jamboreele sõit on meie skautide jaoks päris kallis, kuid tahtmine minna suur. Selle nimel näevad noored ka
+            ise tublisti vaeva müües näiteks enda küpsetisi skaudilaagrite kohvikutes ja pannes kõrvale suvel teenitud
+            taskuraha. Iga toetus on samm ligemale noorte unistusele. Iga toetusega aitate muuta maailma paremaks kohaks,
+            sest Jamboreel käik annab neile suure innustuse ka ise skaudijuhtideks saada ning omakorda lastele läbi
+            skauditarkuste paremaks inimeseks kasvamist õpetada.
+
+          <h2>SEB pank</h2>
+          a/a EE58101002204944700<br>
+          Pangakood: 401<br>
+          SWIFT kood: EEUHEE2X <br>
+          Märksõna: Jamboree toetus (Salga nimi)
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="page" id="KKK" style="display: none;">
+      <div class="left block rules-9 clearfix">
+        <div class="side"></div>
+        <div class="main">
+          <h1>Korduma kippuvad küsimused</h1>
+
+          <h2>Mida sisaldab 1500€</h2>
+
+          <p>Meie arvutuste järgi sisaldab see Laagri osavõtutasu JA transporti Eesti-jamboree-Eesti (ehk vajalikke
+            lennu/rongi/bussipileteid)</p>
+
+          <p>Kui vähegi võimalik, siis sisaldab see hind ka:</p>
+          <ul>
+            <li>2x esinduskaelarätt</li>
+            <li>Ca 10 Eesti kontingendi tikandmärki vahetamiseks</li>
+            <li>1-2 Eesti kontingendi logo ja nimega T-särki</li>
+          </ul>
+          <p>Mis võib juhtuda, et ei mahu 1500€ sisse:</p>
+          <ul>
+            <li>Hostel ja kohalik transport nende päevade jaoks, mis me ei ole veel/enam laagris, aga uudistame Jaapanit
+            </li>
+            <li>Toidukorrad, mis ei ole kaetud lennupiletitega või Jamboreel kohapeal (ehk siis see aeg, kui passime
+              lennujaamas või uudistame Jaapanit omal käel)
+            </li>
+            <li>Reisikindlustus</li>
+          </ul>
+
+          <h2>Kas ma saan jääda Jaapanisse omal käel pärast laagri lõppu?</h2>
+
+          <p>Kui sa oled IST - ainult siis, kui jõuame selle kokkuleppeni kiiresti enne lennupiletite ostu</p>
+
+          <p>Kui sa oled osaleja - ei.</p>
+
+          <h2>Millal me lendame? Millal me tagasi tuleme?</h2>
+
+          <p>Lennupiletid ei ole veel ostetud. Lennupiletid saame osta nimeliselt ja alles siis, kui osalejate ja ISTdega
+            on sõlmitud vastavad lepingud</p>
+
+          <h2>Millal lennupiletid ära ostetakse? Need lähevad ju ainult kallimaks!</h2>
+
+          <p>Lennupiletid saame osta nimeliselt ja alles siis, kui osalejate ja ISTdega on sõlmitud vastavad lepingud.
+            Loodame selleni jõuda hiljemalt veebruari lõpuks.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer clearfix">
+      <div class="esy-logo"></div>
+      <div class="kes-ja-mis">
+        <p>
+          Info: liinaland@gmail.com ja telefonil 525 82 82
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
 </html>
