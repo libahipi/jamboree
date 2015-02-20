@@ -11,11 +11,9 @@
 @font-face {
   font-family: 'Century Gothic';
   src: url("gothic.ttf"); }
-
 @font-face {
   font-family: 'Futura';
   src: url("Futura.ttf"); }
-
 html,
 button,
 input,
@@ -97,6 +95,8 @@ body {
   display: block; }
 
 #nav {
+  padding: 0;
+  margin: 0;
   margin-bottom: 30px;
   background-color: rgba(238, 149, 2, 0.92); }
 
@@ -123,6 +123,10 @@ body {
   padding: 5px 15px;
   color: white;
   text-decoration: none; }
+
+.page {
+  font-family: "Century Gothic", serif;
+  color: white; }
 
 .page.row {
   margin-left: 0;
@@ -164,10 +168,32 @@ body {
   background-size: contain;
   background-color: white; }
 
+.blog-top {
+  padding: 10px 20px;
+  background-color: rgba(133, 50, 24, 0.95);
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px; }
+
+.blog-post {
+  padding: 20px;
+  background-color: rgba(113, 20, 14, 0.95);
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
+.picture {
+  background-size: cover;
+  background-position: center center;
+  min-height: 200px; }
+
+.text {
+  background-color: rgba(113, 20, 14, 0.95);
+  margin-bottom: 20px; }
+
 .block {
   display: table;
-  margin-bottom: 20px;
-  font-family: "Century Gothic"; }
+  margin-bottom: 20px; }
   .block .side {
     display: table-cell;
     width: 300px; }
@@ -278,3 +304,5 @@ body {
  */
 .clearfix {
   *zoom: 1; }
+
+/*# sourceMappingURL=main.css.map */

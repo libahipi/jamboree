@@ -27,6 +27,32 @@ App = {
       $li.addClass('active');
       window.location.hash = to;
 
+      // set picture container heights if needed.
+      if (window.matchMedia("(min-width: 992px)").matches) {
+        changePicHeight(true);
+      }
+    }
+
+    window.matchMedia("(min-width: 992px)").addListener(function(mql) {
+      if (mql.matches) {
+        changePicHeight(true)
+      } else {
+        changePicHeight(false);
+      }
+    });
+
+    function changePicHeight(wide) {
+      if (wide) {
+        $.each($('.page:visible .picture'), function(i, pic) {
+          $pic = $(pic);
+          $pic.height($pic.next().filter('.text').height());
+        });
+      }
+      else {
+        $.each($('.page:visible .picture'), function(i, pic) {
+          $(pic).height('auto');
+        });
+      }
     }
 
     $('#nav li').on('click', 'a', function (e) {
