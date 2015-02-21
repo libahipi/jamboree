@@ -45,7 +45,7 @@ App = {
       if (wide) {
         $.each($('.page:visible .picture'), function(i, pic) {
           $pic = $(pic);
-          $pic.height($pic.next().filter('.text').height());
+          $pic.height($pic.next().filter('.text').outerHeight());
         });
       }
       else {
