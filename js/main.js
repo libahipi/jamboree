@@ -13,7 +13,7 @@ App = {
           $jamb_el = $('.jamboree-intro'),
           $iframe = $video_el.find('iframe');
       $iframe.attr('width', $video_el.width());
-      $iframe.attr('height', $jamb_el.height());
+      $iframe.attr('height', $jamb_el.outerHeight());
     };
 
     function navigate(to) {

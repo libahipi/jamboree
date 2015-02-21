@@ -140,20 +140,23 @@ body {
   .jamboree-intro a.flickr-link, .video-container a.flickr-link {
     display: inline-block;
     float: right;
-    margin: 5px 10px 10px 10px;
+    margin: 5px 10px 0 10px;
     color: #ee9502; }
 
 .jamboree-intro {
+  padding-top: 10px;
+  padding-bottom: 10px;
   border-top-right-radius: 5px;
-  padding-left: 0; }
+  clear: right; }
 
 .video-container {
-  padding-right: 0; }
+  padding: 0; }
   .video-container iframe {
-    margin-left: -15px;
     margin-bottom: -5px; }
 
 .japan-2015-intro {
+  padding-top: 10px;
+  padding-bottom: 10px;
   margin-top: 20px;
   min-height: 250px;
   background-color: rgba(238, 149, 2, 0.9);
@@ -189,6 +192,7 @@ body {
 
 .text {
   background-color: rgba(113, 20, 14, 0.95);
+  padding: 20px;
   margin-bottom: 20px; }
 
 .block {
